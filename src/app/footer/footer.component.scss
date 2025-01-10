@@ -1,0 +1,67 @@
+/* footer.component.scss */
+.footer {
+  background-color: #54546f; /* Dark background */
+  color: #fff; /* Light font color for contrast */
+  padding: 40px 20px;
+
+  /* Animation on visibility */
+  &.visible {
+    opacity: 1;
+    transform: translateY(0);
+    transition: all 0.10s ease-in;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: space-between; /* Space out the two sections */
+    align-items: flex-start; /* Align sections to the top */
+    flex-wrap: wrap; /* Allow wrapping on smaller screens */
+    gap: 20px;
+
+    .footer-section {
+      flex: 1; /* Ensures sections are equally spaced */
+      max-width: 50%; /* Restricts width for larger screens */
+
+      h3 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+        color: #ff5722; /* Accent color for section titles */
+      }
+
+      p {
+        font-size: 0.9rem;
+        margin: 5px 0;
+      }
+    }
+
+    .contact-us {
+      text-align: center; /* Align text to the left for Contact Us */
+    }
+
+    .social-media {
+      text-align: center; /* Center-align content in the Social Media section */
+
+      .follow-us {
+        margin-bottom: 20px;
+
+        a {
+          margin: 0 10px;
+          font-size: 1.5rem;
+          color: #fff; /* Icon color */
+          transition: color 0.3s;
+
+          &:hover {
+            color: #ff5722; /* Accent color on hover */
+          }
+        }
+      }
+
+      .logo {
+        img {
+          width: 120px; /* Adjust logo size */
+          margin-top: 20px; /* Space between icons and logo */
+        }
+      }
+    }
+  }
+}

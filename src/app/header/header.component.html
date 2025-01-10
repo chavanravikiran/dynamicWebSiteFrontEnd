@@ -1,0 +1,28 @@
+<!-- <button (click)="toggleMenu()">Menu</button> -->
+<!-- <button class="menu-button" (click)="toggleMenu()">☰</button>
+<app-menu *ngIf="isMenuOpen"></app-menu>
+
+<div *ngIf="isMenuOpen" class="menu-container">
+    <span class="menu-close" (click)="toggleMenu()">X</span>
+</div> -->
+<div class="header-container">
+    <!-- <button class="menu-button" (click)="toggleMenu()">☰</button> -->
+    <div class="brand-logo">
+      <img src="assets/logo.png" alt="Brand Logo" />
+      <span class="brand-name">My Application</span>
+    </div>
+    <nav class="header-nav">
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <!-- <li><a href="/about">About</a></li> -->
+        <li><a href="/services">Services</a></li>
+        <li><a href="/contact-us" class="menu-link">Contact</a></li>
+        <li><a href="/inquiry" class="menu-link">Inquiry</a></li>
+      </ul>
+    </nav>
+    <div *ngIf="isMenuOpen" class="menu-container">
+      <app-menu></app-menu>
+      <span class="menu-close" (click)="toggleMenu()">X</span>
+    </div>
+  </div>
+  
