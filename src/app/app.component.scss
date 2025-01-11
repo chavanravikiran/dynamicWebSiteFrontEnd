@@ -1,0 +1,43 @@
+// /* app.component.scss */
+// .container {
+//     display: flex;
+//     flex-direction: column;
+//     // height: 100vh;
+//   }
+  
+//   .body-content {
+//     flex: 1;
+//     padding: 20px;
+//     overflow-y: auto;
+//   }
+
+// App.component.scss
+.container {
+  display: flex;
+  flex-direction: column;
+  // height: 100vh; /* Full height of the viewport */
+  height: calc(100vh - 63px);
+}
+
+app-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Ensure it stays above the content */
+}
+
+.body-content {
+  flex: 1;
+  margin-top: 23px; /* Adjust this value based on header height */
+  margin-bottom: 40px; /* Adjust this value based on footer height */
+  // overflow-y: auto; /* Enable scrolling */
+  // padding: 20px;
+  padding-top: 20px;
+}
+
+app-footer {
+  position: relative; 
+  z-index: 1000;
+  margin-top: auto; /* To push the footer to bottom */
+}

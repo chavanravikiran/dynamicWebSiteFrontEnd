@@ -9,7 +9,7 @@
     max-width: 600px;
     margin: 0 auto;
     padding: 20px;
-    border: 1px solid #ccc;
+    // border: 1px solid #ccc;
     border-radius: 5px;
   }
   
@@ -19,6 +19,7 @@
   
   .form-group {
     margin-bottom: 15px;
+    margin-right: 65px;
   }
   
   label {
@@ -26,14 +27,14 @@
     margin-bottom: 5px;
   }
   
-  input[type="text"],
-  input[type="email"],
-  textarea {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 3px;
-  }
+//   input[type="text"],
+//   input[type="email"],
+//   textarea {
+//     width: 100%;
+//     padding: 10px;
+//     // border: 1px solid #ccc;
+//     border-radius: 3px;
+//   }
   
   textarea {
     height: 100px;
@@ -48,13 +49,13 @@
     cursor: pointer;
   }
 
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
-  }
+//   .fade-in {
+//     opacity: 0;
+//     transform: translateY(20px);
+//     transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+//   }
   
-  .fade-in.active {
-    opacity: 1;
-    transform: translateY(0);
-  }
+//   .fade-in.active {
+//     opacity: 1;
+//     transform: translateY(0);
+//   }

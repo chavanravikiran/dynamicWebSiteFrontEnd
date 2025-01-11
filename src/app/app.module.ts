@@ -13,6 +13,10 @@ import { ServicesComponent } from './services/services.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { InquiryComponent } from './inquiry/inquiry.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { MatFormFieldModule } from '@angular/material/form-field';
+import { MatInputModule } from '@angular/material/input';
+import { MatCardModule } from '@angular/material/card';
 
 @NgModule({
   declarations: [
@@ -27,7 +31,12 @@ import { InquiryComponent } from './inquiry/inquiry.component';
     InquiryComponent,
     BrowserModule,
   ], 
-  imports: [CommonModule, BrowserModule, RouterModule, RouterModule.forRoot(routes),],
+  imports: [CommonModule, BrowserModule, RouterModule, RouterModule.forRoot(routes),
+    BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule
+  ],
   providers: [],
   bootstrap: [AppComponent]
 })
