@@ -1,13 +1,7 @@
-<!-- <button (click)="toggleMenu()">Menu</button> -->
-<!-- <button class="menu-button" (click)="toggleMenu()">☰</button>
-<app-menu *ngIf="isMenuOpen"></app-menu>
 
-<div *ngIf="isMenuOpen" class="menu-container">
-    <span class="menu-close" (click)="toggleMenu()">X</span>
-</div> -->
 <div class="header-container">
     <!-- <button class="menu-button" (click)="toggleMenu()">☰</button> -->
-    <div class="brand-logo">
+    <div class="brand-logo" (click)="navigateToHome()">
       <img src="assets/logo.png" alt="Brand Logo" />
       <span class="brand-name">My Application</span>
     </div>

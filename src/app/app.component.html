@@ -1,12 +1,13 @@
-<!-- <app-header></app-header>
-  <router-outlet></router-outlet>
-<app-footer></app-footer> -->
 
 <!--App.component.html-->
 <div class="container">
   <app-header></app-header>
   <div class="body-content">
-    <router-outlet></router-outlet>
-    <app-footer *ngIf="showFooter"></app-footer>
+    <div>
+      <router-outlet></router-outlet>
+    </div>
+    <div>
+      <app-footer ></app-footer>
+    </div>
   </div>
 </div>

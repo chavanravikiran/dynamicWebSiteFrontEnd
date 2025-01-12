@@ -7,11 +7,11 @@ import { Component } from '@angular/core';
   imports: [],
   templateUrl: './home.component.html',
   styleUrl: './home.component.scss',
-  animations: [
-    trigger('fade', [
-      transition(':enter', [style({ opacity: 0 }), animate('500ms', style({ opacity: 1 }))]),
-    ])
-  ]
+  // animations: [
+  //   trigger('fade', [
+  //     transition(':enter', [style({ opacity: 0 }), animate('500ms', style({ opacity: 1 }))]),
+  //   ])
+  // ]
 })
 export class HomeComponent {
 

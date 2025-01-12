@@ -1,43 +1,61 @@
-// /* app.component.scss */
-// .container {
-//     display: flex;
-//     flex-direction: column;
-//     // height: 100vh;
-//   }
-  
-//   .body-content {
-//     flex: 1;
-//     padding: 20px;
-//     overflow-y: auto;
-//   }
 
 // App.component.scss
+// .container {
+//   display: flex;
+//   flex-direction: column;
+//   // height: 100vh; /* Full height of the viewport */
+//   height: calc(100vh - 63px);
+// }
+
+// app-header {
+//   position: fixed;
+//   top: 0;
+//   left: 0;
+//   right: 0;
+//   z-index: 1000; /* Ensure it stays above the content */
+// }
+
+// .body-content {
+//   flex: 1;
+//   margin-top: 23px; /* Adjust this value based on header height */
+//   margin-bottom: 40px; /* Adjust this value based on footer height */
+//   // overflow-y: auto; /* Enable scrolling */
+//   // padding: 20px;
+//   padding-top: 20px;
+// }
+
+// app-footer {
+//   position: relative; 
+//   z-index: 1000;
+//   // margin-top: auto; /* To push the footer to bottom */
+// }
 .container {
   display: flex;
   flex-direction: column;
-  // height: 100vh; /* Full height of the viewport */
-  height: calc(100vh - 63px);
+  min-height: 100vh; /* Full viewport height */
 }
 
 app-header {
-  position: fixed;
+  position: fixed; /* Fix the header at the top */
   top: 0;
   left: 0;
   right: 0;
-  z-index: 1000; /* Ensure it stays above the content */
+  z-index: 1000; /* Keep the header above other elements */
+  height: 50px; /* Set the exact height of the header */
+  // background: white; /* Ensure a visible background */
+  // border-bottom: 1px solid #ddd; /* Optional: Add a bottom border for separation */
 }
 
 .body-content {
   flex: 1;
-  margin-top: 23px; /* Adjust this value based on header height */
-  margin-bottom: 40px; /* Adjust this value based on footer height */
-  // overflow-y: auto; /* Enable scrolling */
-  // padding: 20px;
-  padding-top: 20px;
+  margin-top: 23px; /* Add margin to account for the header height */
+  // padding: 20px; /* Add padding if needed */
+  // overflow: auto; /* Enable scrolling for large content */
 }
 
 app-footer {
-  position: relative; 
-  z-index: 1000;
-  margin-top: auto; /* To push the footer to bottom */
+  background: #f8f9fa; /* Footer background color */
+  // padding: 20px; /* Footer padding */
+  position: relative; /* Ensure the footer is part of the flow */
+  z-index: 10; /* Lower z-index to avoid overlapping header */
 }

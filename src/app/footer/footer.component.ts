@@ -1,9 +1,11 @@
 import { Component, ElementRef, HostListener } from '@angular/core';
+import { GoogleMapComponent } from '../google-map/google-map.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @Component({
   selector: 'app-footer',
   standalone: true,
-  imports: [],
+  imports: [GoogleMapComponent,GoogleMapsModule],
   templateUrl: './footer.component.html',
   styleUrl: './footer.component.scss'
 })

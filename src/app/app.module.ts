@@ -13,10 +13,13 @@ import { ServicesComponent } from './services/services.component';
 import { FooterComponent } from './footer/footer.component';
 import { MenuComponent } from './menu/menu.component';
 import { InquiryComponent } from './inquiry/inquiry.component';
-import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+// import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatCardModule } from '@angular/material/card';
+// import { GoogleMapsModule } from '@angular/google-maps';
+import { GoogleMapComponent } from './google-map/google-map.component';
+import { GoogleMapsModule } from '@angular/google-maps';
 
 @NgModule({
   declarations: [
@@ -30,12 +33,14 @@ import { MatCardModule } from '@angular/material/card';
     MenuComponent,
     InquiryComponent,
     BrowserModule,
+    GoogleMapComponent,
   ], 
   imports: [CommonModule, BrowserModule, RouterModule, RouterModule.forRoot(routes),
-    BrowserAnimationsModule,
+    // BrowserAnimationsModule,
     MatFormFieldModule,
     MatInputModule,
-    MatCardModule
+    MatCardModule,
+    GoogleMapsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

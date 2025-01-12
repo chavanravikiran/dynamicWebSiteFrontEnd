@@ -23,4 +23,9 @@ export class HeaderComponent {
     this.router.navigate(['/menu']); 
   }
   
+  navigateToHome() {
+    console.log("click kele ka ?");
+    
+    this.router.navigate(['/home']);
+  }
 }

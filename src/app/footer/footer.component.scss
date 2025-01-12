@@ -21,7 +21,7 @@
     .footer-section {
       flex: 1; /* Ensures sections are equally spaced */
       max-width: 50%; /* Restricts width for larger screens */
-
+      
       h3 {
         font-size: 1.5rem;
         margin-bottom: 10px;
@@ -64,4 +64,9 @@
       }
     }
   }
+}
+google-map {
+  width: 100%;
+  height: 200px;
+  margin-top: 20px;
 }

@@ -9,6 +9,7 @@ import { DesignComponent } from './design/design.component';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import { CommonModule } from '@angular/common';
+// import { animate, style, transition, trigger } from '@angular/animations';
 
 // <!--App.component.ts-->
 @Component({
@@ -29,7 +30,7 @@ import { CommonModule } from '@angular/common';
 ],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent {
   title = 'animatic-static-website';
