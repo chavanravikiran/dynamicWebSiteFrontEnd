@@ -1,0 +1,15 @@
+{
+  "routes": [
+    "/about-us",
+    "/availability",
+    "/contact-us",
+    "/design",
+    "/footer",
+    "/gallery",
+    "/home",
+    "/inquiry",
+    "/live-count",
+    "/menu",
+    "/services"
+  ]
+}
