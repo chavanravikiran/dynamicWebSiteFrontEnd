@@ -18,6 +18,7 @@
           "builder": "@angular-devkit/build-angular:application",
           "options": {
             "outputPath": "dist",
+            "baseHref": "/dynamicWebSiteFrontEnd/",
             "statsJson": true,
             "index": "src/index.html",
             "browser": "src/main.ts",
@@ -83,7 +84,7 @@
           "configurations": {
             "production": {
               "buildTarget": "animatic-static-website:build:production",
-              "baseHref": "https://chavanravikiran.github.io/dynamicWebSiteFrontEnd/"
+              "baseHref": "/dynamicWebSiteFrontEnd/"
             },
             "development": {
               "buildTarget": "animatic-static-website:build:development"
