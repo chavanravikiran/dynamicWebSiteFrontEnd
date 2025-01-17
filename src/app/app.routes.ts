@@ -10,6 +10,9 @@ import { FooterComponent } from './footer/footer.component';
 import { HeaderComponent } from './header/header.component';
 import { MenuComponent } from './menu/menu.component';
 import { InquiryComponent } from './inquiry/inquiry.component';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { LiveCountComponent } from './live-count/live-count.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/home', pathMatch: 'full' },
@@ -21,7 +24,10 @@ export const routes: Routes = [
   { path: 'availability', component: AvailabilityComponent },
   { path: 'footer', component: FooterComponent },
   { path: 'menu', component: MenuComponent },
-  { path: 'inquiry', component: InquiryComponent}
+  { path: 'inquiry', component: InquiryComponent},
+  { path: 'about-us', component: AboutUsComponent},
+  { path: 'live-count', component: LiveCountComponent},
+  { path: 'gallery', component: GalleryComponent},
 ];
 
 @NgModule({

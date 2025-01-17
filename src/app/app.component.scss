@@ -53,9 +53,15 @@ app-header {
   // overflow: auto; /* Enable scrolling for large content */
 }
 
-app-footer {
+// app-footer {
+//   background: #f8f9fa; /* Footer background color */
+//   // padding: 20px; /* Footer padding */
+//   position: relative; /* Ensure the footer is part of the flow */
+//   z-index: 10; /* Lower z-index to avoid overlapping header */
+// }
+
+.app-footer {
   background: #f8f9fa; /* Footer background color */
-  // padding: 20px; /* Footer padding */
-  position: relative; /* Ensure the footer is part of the flow */
-  z-index: 10; /* Lower z-index to avoid overlapping header */
+  position: relative;  /* Make sure footer is part of normal layout flow */
+  z-index: 1000;         /* Ensure footer is below the slider */
 }
