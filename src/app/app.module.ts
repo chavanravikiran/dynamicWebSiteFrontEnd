@@ -20,9 +20,21 @@ import { MatCardModule } from '@angular/material/card';
 // import { GoogleMapsModule } from '@angular/google-maps';
 import { GoogleMapComponent } from './google-map/google-map.component';
 import { GoogleMapsModule } from '@angular/google-maps';
+import { AboutUsComponent } from './about-us/about-us.component';
+import { LiveCountComponent } from './live-count/live-count.component';
+import { GalleryComponent } from './gallery/gallery.component';
 
 @NgModule({
   declarations: [
+    
+  ], 
+  imports: [CommonModule, BrowserModule, RouterModule, RouterModule.forRoot(routes),
+    // BrowserAnimationsModule,
+    MatFormFieldModule,
+    MatInputModule,
+    MatCardModule,
+    GoogleMapsModule,
+    GoogleMapComponent,
     AppComponent,
     AvailabilityComponent,
     ContactUsComponent,
@@ -32,17 +44,11 @@ import { GoogleMapsModule } from '@angular/google-maps';
     FooterComponent,
     MenuComponent,
     InquiryComponent,
-    BrowserModule,
-    GoogleMapComponent,
-  ], 
-  imports: [CommonModule, BrowserModule, RouterModule, RouterModule.forRoot(routes),
-    // BrowserAnimationsModule,
-    MatFormFieldModule,
-    MatInputModule,
-    MatCardModule,
-    GoogleMapsModule
+    AboutUsComponent,
+    LiveCountComponent,
+    GalleryComponent
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: []
 })
 export class AppModule {}
