@@ -82,7 +82,8 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "buildTarget": "animatic-static-website:build:production"
+              "buildTarget": "animatic-static-website:build:production",
+              "baseHref": "https://chavanravikiran.github.io/dynamicWebSiteFrontEnd/"
             },
             "development": {
               "buildTarget": "animatic-static-website:build:development"
