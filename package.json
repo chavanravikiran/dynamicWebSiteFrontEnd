@@ -7,8 +7,8 @@
     "build": "ng build",
     "watch": "ng build --watch --configuration development",
     "test": "ng test",
-    "build:ssr": "ng run animatic-static-website:server",
-    "serve:ssr:animatic-static-website": "node dist/animatic-static-website/server/server.js"
+    "build:ssr": "ng build && ng run animatic-static-website:server",
+    "serve:ssr": "node dist/animatic-static-website/server/main.js"
   },
   "private": true,
   "dependencies": {
