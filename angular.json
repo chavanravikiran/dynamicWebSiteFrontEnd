@@ -16,8 +16,8 @@
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:application",
-          // "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            "baseHref": "/",
             "outputPath": "dist/browser",
             "statsJson": true,
             "index": "src/index.html",
