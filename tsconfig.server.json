@@ -1,0 +1,15 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "outDir": "./dist/server",
+    "target": "ES2020",
+    "module": "CommonJS",
+    "types": ["node"],
+    "importHelpers": true,
+    "moduleResolution": "Node",
+    "noEmitOnError": false,
+    "allowSyntheticDefaultImports": true
+  },
+  "files": ["src/main.server.ts"],
+  "include": ["src/**/*.d.ts"]
+}
